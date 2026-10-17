@@ -1,26 +1,28 @@
 [gd_scene format=3 uid="uid://n6ul055oebb2"]
 
 [ext_resource type="PackedScene" uid="uid://bo4opnevbgyhh" path="res://player.tscn" id="1_3hls8"]
+[ext_resource type="Texture2D" uid="uid://os58h2m7ou7t" path="res://Backgrounds/platformer_background_4/platformer_background_4.png" id="2_hbghi"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_h0ucw"]
-size = Vector2(4604, 600)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a083r"]
+size = Vector2(1145.375, 134)
 
 [node name="Level1" type="Node2D" unique_id=939673770]
 
+[node name="CharacterBody2D" parent="." unique_id=1025856527 instance=ExtResource("1_3hls8")]
+position = Vector2(176, 395)
+
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1536974569]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1594627540]
-position = Vector2(68, 1397)
-shape = SubResource("RectangleShape2D_h0ucw")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1663587761]
+position = Vector2(576, 575)
+shape = SubResource("RectangleShape2D_a083r")
 
-[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=973463448]
-offset_left = -2564.0
-offset_top = 1098.0
-offset_right = 2312.0
-offset_bottom = 1992.0
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=388892555]
 
-[node name="CharacterBody2D" parent="StaticBody2D" unique_id=1025856527 instance=ExtResource("1_3hls8")]
-position = Vector2(-1832, 849)
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=866058073]
+motion_mirroring = Vector2(1152, 0)
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=40177403]
-position = Vector2(-1838, 823)
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground" unique_id=1908425250]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_hbghi")
