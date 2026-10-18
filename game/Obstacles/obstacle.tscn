@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d0ujr720sjf6k"]
+
+[ext_resource type="Script" uid="uid://cd24o1xk5yo1l" path="res://Obstacles/obstacle.gd" id="1_aubd6"]
+[ext_resource type="Texture2D" uid="uid://ckfqdkp81xwwr" path="res://UIElements/basic blue/arrow up.png" id="1_sl1jc"]
+
+[node name="Obstacle" type="Area2D" unique_id=534967469]
+script = ExtResource("1_aubd6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=762777843]
+position = Vector2(4, 2)
+texture = ExtResource("1_sl1jc")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1865928259]
+position = Vector2(0, -2)
+polygon = PackedVector2Array(5, -42, 58, 37, 54, 47, -46, 47, -53, 39)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

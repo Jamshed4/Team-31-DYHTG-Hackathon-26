@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://bo4opnevbgyhh"]
+
+[ext_resource type="Texture2D" path="res://Backgrounds/platformer_background_4/platformer_background_4.png" id="1_hqtel"]
+[ext_resource type="PackedScene" uid="uid://d0ujr720sjf6k" path="res://Obstacles/obstacle.tscn" id="2_sweqy"]
+[ext_resource type="PackedScene" uid="uid://bipdp2ykpp5hv" path="res://Obstacles/Wall.tscn" id="3_2hs0m"]
+[ext_resource type="PackedScene" uid="uid://bo4opnevbgyhh" path="res://player.tscn" id="4_1jxqw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a083r"]
+size = Vector2(6506.6875, 134)
+
+[node name="Level1" type="Node2D" unique_id=939673770]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1345117972]
+repeat_size = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1908425250]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_hqtel")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1536974569]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1663587761]
+position = Vector2(3256.6563, 575)
+shape = SubResource("RectangleShape2D_a083r")
+
+[node name="CharacterBody2D" parent="." unique_id=1025856527 instance=ExtResource("4_1jxqw")]
+position = Vector2(176, 395)
+
+[node name="Obstacles" type="Node2D" parent="." unique_id=654050640]
+
+[node name="Obstacle8" parent="Obstacles" unique_id=534967469 instance=ExtResource("2_sweqy")]
+position = Vector2(1951, 53)
+rotation = -3.1415925
+metadata/_edit_group_ = true
+
+[node name="Obstacle9" parent="Obstacles" unique_id=1325714386 instance=ExtResource("2_sweqy")]
+position = Vector2(1633, 49)
+rotation = -3.1415925
+metadata/_edit_group_ = true
+
+[node name="Obstacle10" parent="Obstacles" unique_id=1188420 instance=ExtResource("2_sweqy")]
+position = Vector2(1728, 49)
+rotation = -3.1415925
+metadata/_edit_group_ = true
+
+[node name="Obstacle11" parent="Obstacles" unique_id=720342832 instance=ExtResource("2_sweqy")]
+position = Vector2(1837, 47)
+rotation = -3.1415925
+metadata/_edit_group_ = true
+
+[node name="Obstacle16" parent="Obstacles" unique_id=2095160978 instance=ExtResource("2_sweqy")]
+position = Vector2(3250, 44)
+rotation = -3.1415925
+metadata/_edit_group_ = true
+
+[node name="Obstacle17" parent="Obstacles" unique_id=1979532377 instance=ExtResource("2_sweqy")]
+position = Vector2(2932, 40)
+rotation = -3.1415925
+metadata/_edit_group_ = true
+
+[node name="Obstacle18" parent="Obstacles" unique_id=360285309 instance=ExtResource("2_sweqy")]
+position = Vector2(3027, 40)
+rotation = -3.1415925
+metadata/_edit_group_ = true
+
+[node name="Obstacle19" parent="Obstacles" unique_id=64532306 instance=ExtResource("2_sweqy")]
+position = Vector2(3136, 38)
+rotation = -3.1415925
+metadata/_edit_group_ = true
+
+[node name="Obstacle12" parent="Obstacles" unique_id=178033966 instance=ExtResource("2_sweqy")]
+position = Vector2(2623, 56)
+rotation = -3.1415925
+metadata/_edit_group_ = true
+
+[node name="Obstacle13" parent="Obstacles" unique_id=1139257657 instance=ExtResource("2_sweqy")]
+position = Vector2(2311, 49)
+rotation = -3.1415925
+metadata/_edit_group_ = true
+
+[node name="Obstacle14" parent="Obstacles" unique_id=468918452 instance=ExtResource("2_sweqy")]
+position = Vector2(2400, 52)
+rotation = -3.1415925
+metadata/_edit_group_ = true
+
+[node name="Obstacle15" parent="Obstacles" unique_id=887685358 instance=ExtResource("2_sweqy")]
+position = Vector2(2509, 50)
+rotation = -3.1415925
+metadata/_edit_group_ = true
+
+[node name="Obstacle4" parent="Obstacles" unique_id=1721180907 instance=ExtResource("2_sweqy")]
+position = Vector2(1375, 478)
+metadata/_edit_group_ = true
+
+[node name="Obstacle5" parent="Obstacles" unique_id=898121597 instance=ExtResource("2_sweqy")]
+position = Vector2(1261, 479)
+metadata/_edit_group_ = true
+
+[node name="Obstacle6" parent="Obstacles" unique_id=38173200 instance=ExtResource("2_sweqy")]
+position = Vector2(1143, 479)
+metadata/_edit_group_ = true
+
+[node name="Obstacle7" parent="Obstacles" unique_id=2012729700 instance=ExtResource("2_sweqy")]
+position = Vector2(1024, 481)
+metadata/_edit_group_ = true
+
+[node name="Obstacle20" parent="Obstacles" unique_id=1591989488 instance=ExtResource("2_sweqy")]
+position = Vector2(2310, 481)
+metadata/_edit_group_ = true
+
+[node name="Obstacle21" parent="Obstacles" unique_id=1338879302 instance=ExtResource("2_sweqy")]
+position = Vector2(2196, 482)
+metadata/_edit_group_ = true
+
+[node name="Obstacle22" parent="Obstacles" unique_id=2094285588 instance=ExtResource("2_sweqy")]
+position = Vector2(2078, 482)
+metadata/_edit_group_ = true
+
+[node name="Obstacle23" parent="Obstacles" unique_id=1124963323 instance=ExtResource("2_sweqy")]
+position = Vector2(1959, 484)
+metadata/_edit_group_ = true
+
+[node name="Obstacle24" parent="Obstacles" unique_id=1636757591 instance=ExtResource("2_sweqy")]
+position = Vector2(2994, 484)
+metadata/_edit_group_ = true
+
+[node name="Obstacle25" parent="Obstacles" unique_id=391652107 instance=ExtResource("2_sweqy")]
+position = Vector2(2880, 485)
+metadata/_edit_group_ = true
+
+[node name="Obstacle26" parent="Obstacles" unique_id=960480822 instance=ExtResource("2_sweqy")]
+position = Vector2(2762, 485)
+metadata/_edit_group_ = true
+
+[node name="Obstacle27" parent="Obstacles" unique_id=526422199 instance=ExtResource("2_sweqy")]
+position = Vector2(2643, 487)
+metadata/_edit_group_ = true
+
+[node name="Obstacle28" parent="Obstacles" unique_id=1975145513 instance=ExtResource("2_sweqy")]
+position = Vector2(3856, 271)
+metadata/_edit_group_ = true
+
+[node name="Obstacle29" parent="Obstacles" unique_id=1123013278 instance=ExtResource("2_sweqy")]
+position = Vector2(3738, 271)
+metadata/_edit_group_ = true
+
+[node name="Obstacle30" parent="Obstacles" unique_id=1003402575 instance=ExtResource("2_sweqy")]
+position = Vector2(3619, 273)
+metadata/_edit_group_ = true
+
+[node name="Walls" type="Node2D" parent="." unique_id=459088501]
+
+[node name="Wall" parent="Walls" unique_id=1035151043 instance=ExtResource("3_2hs0m")]
+position = Vector2(3439, 387)
+
+[node name="Wall5" parent="Walls" unique_id=1843426410 instance=ExtResource("3_2hs0m")]
+position = Vector2(3799, 271)
+
+[node name="Wall7" parent="Walls" unique_id=1354313383 instance=ExtResource("3_2hs0m")]
+position = Vector2(3799, 387)
+
+[node name="Wall6" parent="Walls" unique_id=1850156924 instance=ExtResource("3_2hs0m")]
+position = Vector2(3679, 271)
+
+[node name="Wall2" parent="Walls" unique_id=607569953 instance=ExtResource("3_2hs0m")]
+position = Vector2(3563, 271)
+
+[node name="Wall3" parent="Walls" unique_id=342915217 instance=ExtResource("3_2hs0m")]
+position = Vector2(3679, 387)
+
+[node name="Wall4" parent="Walls" unique_id=632909362 instance=ExtResource("3_2hs0m")]
+position = Vector2(3559, 387)
